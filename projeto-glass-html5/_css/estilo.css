@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+	body{
+		
+		color: rgba(0,0,0,1);
+	}
+
+	p{
+		text-align: justify;
+		text-indent: 50px;
+	}
+
+	/*FORMATAÇÃO DE IMAGENS COM LEGENDAS*/
+	figure.foto-legenda{
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black; /*configurando o sombreamento da borda*/
+	}
+	figure.foto-legenda img{ /*se a tela do navegador aumenta/diminui, a figura também o faz chegando ao limite da interface*/
+		width: 100%;
+		height: 100%;
+	}
+	figure.foto-legenda figcaption{ /*figcaption é um objeto-conteiner (filho) de figure*/
+		opacity: 0; /*transparência da legenda*/
+		position: absolute; /*posição fixa dentro do conteiner (borda branca)*/
+		top: 0px;
+		background-color: rgba(0,0,0,0.4);
+		color: white; /*cor da letra da legenda*/
+		width: 100%; /*a cor de fundo da legenda ocupará toda a área da imagem*/
+		height: 100%;
+		padding: 10px; /*espaço dentro da legenda*/
+		box-sizing: border-box; /*cria uma caixa dentro da borda*/
+		transition: opacity 1s;
+	}
+	figure.foto-legenda:hover figcaption{/*dispara uma formatação específica quando o cursor pasa sobre a imagem*/
+		opacity: 1;
+	}
