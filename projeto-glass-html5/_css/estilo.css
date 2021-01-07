@@ -35,3 +35,24 @@
 	figure.foto-legenda:hover figcaption{/*dispara uma formatação específica quando o cursor pasa sobre a imagem*/
 		opacity: 1;
 	}
+
+	/*FORMATAÇÃO DO MENU*/
+	nav#menu{ /*para que o menu flutue*/
+		display: block;
+	}
+	nav#menu ul{ /*sempre que tiver um id, é preciso usar a cerquilha*/
+		list-style: none; /*para "sumir" com os marcadores*/
+		text-transform: uppercase; /*colocando tudo em letrais maiúsculas*/
+		position: absolute; /*para que o bloco possa passar por cima dos documentos*/
+		top: -20px;
+		left: 600px;
+	}
+	nav#menu li{ /*formatação para cada um dos itens da lista*/
+		display: inline-block; /*faz com que um bloco seja exibido em uma mesma linha*/
+		background-color: #dddddd; /*cinza claro para o fundo do menu*/
+		padding: 10px; /*cria um espaço dentro da caixa, no menu*/
+		margin: 2px; /*controla o espaço fora de cada botão, entre os botões*/ 
+	}
+	nav#menu h1{ /*para o texto de "Menu Principal"*/
+		display: none; /*para escondê-lo*/
+	}
