@@ -1,13 +1,32 @@
 @charset "UTF-8";
 
 	body{
-		
+		background-color: #dddddd; /*cor de fundo da página*/
 		color: rgba(0,0,0,1);
+	}
+
+	/*FORMATANDO A INTERFACE DO SITE*/
+	div#interface{
+		width: 1200px; /*largura da interface*/
+		background-color: #ffffff; /*fundo branco*/
+		margin: -20px auto 0px auto; /*CENTRALIZAÇÃO: margens de CIMA, da DIREITA, de BAIXO, da ESQUERDA*/
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /*sombra suave nas bordas da interface*/
+		padding: 10px 10px 10px 10px; /*espaço interno do objeto */
 	}
 
 	p{
 		text-align: justify;
 		text-indent: 50px;
+	}
+
+	header#cabecalho img#icone{
+		position: absolute; /* ícone vai flutuar pela página*/
+		left: 1038px;
+		top: 40px;
+	}
+
+	header#cabecalho{
+		
 	}
 
 	/*FORMATAÇÃO DE IMAGENS COM LEGENDAS*/
