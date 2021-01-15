@@ -22,11 +22,30 @@
 	header#cabecalho img#icone{
 		position: absolute; /* ícone vai flutuar pela página*/
 		left: 1038px;
-		top: 40px;
+		top: 32px;
 	}
 
 	header#cabecalho{
-		
+		border-bottom: 1px #606060 dotted; /*configurando borda que separa o cabeçalho*/
+		height: 170px; /*altura do cabeçalho*/
+		background: url("../_imagens/._glass-logo-peq.jpg") no-repeat -7px 70px; /*a imagem de fundo, por ser pequena, não será replicada por todo o background do cabeçalho*/
+	}
+
+	header#cabecalho h1{
+		font-family: Arial, sans-serif;
+		font-size: 30px;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	header#cabecalho h2{
+		font-family: Arial, sans-serif;
+		font-size: 15pt;
+		color: #888888;
+		padding: 0px;
+		margin-top: 0px;
 	}
 
 	/*FORMATAÇÃO DE IMAGENS COM LEGENDAS*/
